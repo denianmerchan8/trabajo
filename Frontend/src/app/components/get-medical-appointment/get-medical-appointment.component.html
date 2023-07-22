@@ -1,0 +1,21 @@
+<div>
+    <h1>Lista de Doctores</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>N° Doc... paciente</th>
+            <th>Especialidad</th>
+            <th>Doctor</th>
+            <th>Paciente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let patient of dataPatient">
+            <td>{{patient.documentNumberPatient}}</td>
+            <td>{{patient.specialty}}</td>
+            <td>{{patient.doctorName}}</td>
+            <td>{{patient.patientName}}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
